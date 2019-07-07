@@ -1,0 +1,23 @@
+<!--pages/all/index.wxml-->
+<view class="page">
+    <view class="tip" bindtap="goPay">
+      <image src="../assets/images/icon-notice.png"></image>
+      <view>
+        充值最高获得50元充电奖励金，点我查看 >>>
+      </view>
+    </view>
+    <!--<map
+      class="map"
+      id="map"
+      controltap="handleControlTap"
+      markertap="handleMarkerTap"
+      regionchange="handleRegionChange"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}"
+      controls="{{controls}}"
+      markers="{{markers}}"></map>-->
+      <!--121.400809 31.123729-->
+
+      <map class="map" id="map" latitude="{{latitude}}" bindcontroltap='handleControlTap' markers="{{markers}}" longitude="{{longitude}}" controls="{{controls}}"  wx:if="{{showmap}}">
+      </map>
+  </view>

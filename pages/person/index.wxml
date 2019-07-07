@@ -1,0 +1,4 @@
+<view>
+
+  <button bindgetuserinfo="ongetUserInfo" wx:if="{{!showuserinfo}}"  open-type="getUserInfo">Login By Wechat</button>
+</view>
